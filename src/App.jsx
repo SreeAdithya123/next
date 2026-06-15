@@ -12,7 +12,7 @@ import Terms from './pages/Terms';
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <div className="App flex flex-col min-h-screen">
         <Navbar />
         <div className="flex-grow">
