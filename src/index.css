@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Premium Modern Palette */
+  --primary-teal: #0F4C5C;
+  --primary-teal-dark: #09343F;
+  --accent-orange: #F36F21;
+  --bg-color: #F8FAFC;
+  --text-main: #1E293B;
+  --text-muted: #64748B;
+
+  /* Glassmorphism & Modern Shadows */
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.5);
+  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+
+  --card-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
+  --card-shadow-hover: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
+}
+
+@layer base {
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    background-image:
+      radial-gradient(circle at 15% 50%, rgba(15, 76, 92, 0.03), transparent 25%),
+      radial-gradient(circle at 85% 30%, rgba(243, 111, 33, 0.03), transparent 25%);
+    @apply text-slate-800 antialiased;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
